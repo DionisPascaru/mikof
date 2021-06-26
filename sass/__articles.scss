@@ -1,0 +1,41 @@
+.articles {
+    background-color: #f9f9f9;
+
+    .article {
+        background-color: #fff;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .article-img {
+        max-height: 250px;
+        overflow: hidden;
+    }
+
+    .article-body {
+        padding: 0 10px;
+    }
+    
+    img {
+        width: 100%;
+    }
+
+    h4 {
+        color: $blue;
+        margin: 20px 0;
+    }    
+
+    p {
+        font-size: 14px;
+    }
+
+    .text-center {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 578px){
+    .articles .article {
+        margin: 20px 0;
+    }
+}

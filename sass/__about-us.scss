@@ -1,0 +1,154 @@
+.about-us{
+    position: relative;
+    background-image: url('../img/about-us-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .about-us-item {
+        padding: 0 30px;
+        
+        h2 {
+            color: $blue;
+        }
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($color: $black, $alpha: 0.9);
+    }
+
+    h2 {
+        color: $white;
+    }
+
+    p {
+        font-size: 14px;
+        color: $white;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .row {
+        padding: 30px 0;
+    }
+}
+
+
+.our-team {
+    .row {
+        justify-content: center;
+    }
+
+    .our-team-item {
+        width: 50%;
+    }
+
+    .our-team-title{
+        font-size: 16px;  
+        font-weight: 600;        
+    }
+    
+    .our-team-img {
+        border-radius: 0;
+    
+        img {
+            width: 100%;
+        }
+    }
+    
+    .our-team-body {
+        padding: 20px 0;
+    }
+
+    .b-bottom {        
+        text-align: center;
+        padding: 0;
+
+        &:after {
+            right: 0;
+        }
+    }     
+}
+
+.team-member {
+    .heading {
+        position: relative;
+    }
+
+    h1 {
+        width: 80%;
+        margin: auto;
+    }
+
+    .member-image {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .about-us {
+        .about-us-item {
+            padding: 0;
+            margin: 30px 0;
+        }
+    }
+
+    .our-team {
+        .our-team-item {
+            width: 25%;
+        }
+
+        .b-bottom {            
+            &:after {
+                right: auto;
+            }
+        } 
+    }
+
+    .team-member {
+        padding-left: 80px;
+        
+        h1 {
+            width: 100%;
+            margin: 0;
+        }
+
+        .content {
+            padding: 0 0 0 40px;
+        }
+
+        .b-bottom {
+            text-align: start;
+
+            h2 {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .our-team {
+        .our-team-item {
+            width: 220px;
+        }
+    }
+
+    .team-member {
+        .content {
+            padding: 0 0 0 80px;
+        }
+    }
+}
+  

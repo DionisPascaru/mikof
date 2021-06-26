@@ -1,0 +1,49 @@
+.carousel {
+    margin: 20px 0;
+    padding: 30px;
+    border-top: 2px solid $light-grey;
+    border-bottom: 2px solid $light-grey;
+
+    .slick-slide {
+        padding: 10px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        top : calc(50% - 22px);
+
+        &:before {
+            content: '';
+        }
+    }
+
+    .slick-prev {
+        background-image: url('../icons/prev.svg');
+        background-size: contain;
+        left: 0;
+    }
+
+    .slick-next {
+        background-image: url('../icons/next.svg');
+        right: 0;
+    }
+
+    .slide-img {
+        max-height: 150px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .slick-dots {
+        left: 0;
+        right: 0;
+    }
+
+    p {
+        margin: 20px 0 0;
+        text-align: center;
+    }
+}

@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'Gilrou-Medium';
+    src: url('../Gilroy-Medium.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+body {
+    font-family: 'Gilrou-Medium';
+}
+
+.btn-primary {
+    border-radius: 0;
+    border: 2px solid $blue;
+    background-color: $blue;
+    color: $white;
+    margin: 5px auto;
+    width: 100%;
+    max-width: 300px;
+
+    &:focus,
+    &:hover {
+        background-color: $white;
+        color: $black;
+    }
+}
+
+.b-bottom {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin: 15px auto;
+
+    &:after {
+        content: '';
+        width: 100px;
+        border-bottom: 3px solid #0094d6;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+.link {
+    text-decoration: none;
+    color: $grey;
+
+    &:hover {
+        color: $blue;
+    }
+}
+
+.nav-item .nav-link:hover {
+    color: $blue;
+}
+
+p {
+    color: $black;
+}
+
+h2 {
+    margin: 20px auto;
+}
+
+section {
+    padding: 30px 0;
+}
+
+.button {
+    text-align: center;
+}
+
+.icon {
+    width: 40px;
+    height: auto;
+    margin: auto;
+
+    svg {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.block-title {
+    text-align: center;
+}
+
+.border-block {
+    border: 2px solid $blue;
+    padding: 20px;
+    text-align: center;
+
+    p {
+        margin: 0;
+    }
+}
+
+.table-price {
+    table {
+        width: 100%;
+    }
+
+    thead {
+        text-align: center;
+        color: $blue;
+
+        h3 {
+            margin: 10px 0;
+        }
+        
+        tr {
+            border-top: 2px solid $light-grey;
+            border-bottom: 2px solid $light-grey;
+        }
+    }
+
+    td {
+        padding: 5px 0;
+        border-bottom: 2px solid $light-grey;
+    }
+
+    td:nth-child(2) {
+        text-align: right;
+    }
+
+    td:nth-child(1) {
+        padding-right: 10px;
+    }
+}
+
+.back-arrow {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+
+    img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 448px) {
+    section {
+        padding: 50px 0;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .b-bottom {        
+        text-align: left;
+        padding: 0;
+
+        h2 {
+            margin: 20px 0;
+        }
+
+        &:after {
+            right: auto;
+        }
+    }
+
+    .button {
+        text-align: left;
+    }
+
+    .content {
+        padding: 0 80px;
+    }
+
+    .back-arrow {
+        top: 10px;
+        left: -50px;
+    }
+}

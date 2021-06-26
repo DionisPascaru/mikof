@@ -1,0 +1,199 @@
+header {
+    padding: 0;
+
+    .navbar {
+        padding: 0;
+    }
+
+    .logo {
+        width: 68px;
+        padding: 5px 10px;
+    }
+
+    .nav {
+        flex-wrap: nowrap;
+    }
+
+    .tabs {
+        width: 100%;
+        border-bottom: 1px solid $grey;
+    }
+
+    .tab {
+        width: 45px;
+        height: 45px;
+        border: none;
+        border-radius: 0;
+        border-left: 1px solid $grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:focus {
+            box-shadow: none;
+        }
+
+
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
+        fill: $grey;
+
+        &:focus {
+            fill: $blue;
+        }
+    }
+
+    .active {
+        color: $blue;
+    }
+}
+
+.lang {
+    .nav-link {
+        padding: 5px;
+        color: $grey;
+        font-weight: 600;
+        font-size: 12px;
+
+        &:focus {
+            color: $blue;
+        }
+    }
+}
+
+.navbar-collapse {
+    .navbar-nav {
+        text-align: right;
+
+        .nav-link {
+            padding: 10px;
+            color: $black;
+            font-weight: 600;
+            font-size: 14px;
+            border-bottom: 1px solid $light-grey;
+
+            &:focus {
+                color: $blue;
+            }
+        }
+    }
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    background-image: url('../img/doctor-holding.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    .heading {
+        position: absolute;
+        left: 0;
+        right: 0;
+
+        p {
+            border-bottom: 2px solid $blue;
+            max-width: 250px;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    p {
+        margin: 20px auto;
+    }
+
+    .banner-text {
+        padding: 0 12px;
+        text-align: center;
+    }
+}
+
+.navbar-desktop {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-expand-md {
+        display: none;
+    }
+
+    .navbar-desktop {
+        display: block;
+    }
+
+    .banner {
+        .heading {
+            display: none;
+        }
+    }
+
+    .navbar-desktop {
+        .nav-link {
+            padding: 0;
+            margin-left: 10px;
+            color: $black;
+        }
+    }
+
+    .navbar-top {
+        padding: 5px 0;
+
+        .phone {
+            svg {
+                fill: $blue;
+            }
+        }
+    }
+
+    .navbar-center {
+        padding: 20px 0;
+
+        .logo {
+            width: auto;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .nav-link {
+            height: 25px;
+
+            &:hover {
+                border-bottom: 2px solid $blue;
+            }
+        }
+    }
+
+    .navbar-bootom {
+        background-color: $blue;
+        padding: 20px 0;
+
+        .nav-link {
+            color: $white;
+            height: 25px;
+
+            &:hover {
+                color: $white;
+                border-bottom: 2px solid $white;
+            }
+        }
+    }
+
+    .banner {
+        padding: 100px 0;
+        flex-direction: row-reverse;
+
+        .banner-text {
+            text-align: left;
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.services {    
+    display: flex;
+    flex-wrap: wrap;
+
+    .service-item {
+        width: 100%;
+        border: 2px solid $light-grey;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .services-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .service-head {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .services {  
+        .service-item {
+            border: none;
+            margin: 10px 0;
+            padding: 0 10px 0 0;
+        }
+
+        .service-head {
+            width: 100%;
+            text-align: start;
+        }
+    }
+}
