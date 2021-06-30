@@ -1,0 +1,38 @@
+.reviews {
+    .review-title {
+        border-bottom: 2px solid $light-grey;
+    }
+
+    .review-item {
+        margin: 20px;
+        padding: 20px;
+        box-shadow: 0 0 20px -4px $grey;
+        background-color: $white;
+    }
+
+    h3 {
+        color: $blue;
+        margin: 20px 0;
+    }
+
+    p {
+        margin: 20px 0;
+    }
+
+    span {
+        color: $light-grey;
+    }
+
+    .button {
+        text-align: center;
+        width: 100%;
+    }
+} 
+
+@media only screen and (min-width: 448px) {
+    .reviews {
+        .review-item {
+            margin: 20px 0;
+        }
+    }
+}

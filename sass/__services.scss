@@ -2,6 +2,11 @@
     display: flex;
     flex-wrap: wrap;
 
+    .text-align {
+        width: 100%;
+        text-align: center;
+    }
+
     .service-item {
         width: 100%;
         border: 2px solid $light-grey;
@@ -22,6 +27,12 @@
 
 @media only screen and (min-width: 768px) {
     .services {  
+        padding: 0;
+
+        .text-align {
+            text-align: start;
+        }
+
         .service-item {
             border: none;
             margin: 10px 0;

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="./node_modules/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Записаться на прием</title>
+</head>
+
+<body>
+    <main>
+        <section class="light-grey-bg">
+            <div class="container">
+                <div class="registration-form box-shadow">
+                    <div class="d-flex">
+                        <div class="b-bottom">
+                            <h2>Наши специалисты</h2>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="mb-3 col-md-6">
+                                <input type="text" class="form-control" placeholder="Имя">
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <input type="text" class="form-control" placeholder="Фамилия">
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <input type="text" class="form-control" placeholder="Отчество">
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <input type="text" class="form-control" placeholder="Телефон">
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <input type="text" class="form-control" placeholder="Персональный код (IDPN)">
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <input type="text" class="form-control" placeholder="Выберите дату рождения">
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <input type="text" class="form-control" placeholder="Подтвердить Email">
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <input type="text" class="form-control" placeholder="Введите код отправленый на Email">
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <select class="form-control form-select" required>
+                                    <option selected disabled value="">Выберите пол</option>
+                                    <option>Mужской</option>
+                                    <option>Женский</option>
+                                </select>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <input type="text" class="form-control" placeholder="Адрес">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <select class="form-control form-select" required>
+                                        <option selected disabled value="">Выбор категории</option>
+                                        <option>категории 1</option>
+                                        <option>категории 2</option>
+                                        <option>категории 3</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-control form-select" required>
+                                        <option selected disabled value="">Выбор услуги</option>
+                                        <option>услуги 1</option>
+                                        <option>услуги 2</option>
+                                        <option>услуги 3</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-control form-select" required>
+                                        <option selected disabled value="">Выбор врача</option>
+                                        <option>врача 1</option>
+                                        <option>врача 2</option>
+                                        <option>врача 3</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="text-center">Выбор даты:</p>
+                                    <div class="d-sm-flex">
+                                        <select class="form-control form-select" required>
+                                            <option selected disabled value="">dd</option>
+                                            <option>01</option>
+                                            <option>02</option>
+                                            <option>03</option>
+                                        </select>
+                                        <select class="form-control form-select ms-sm-4 me-sm-4" required>
+                                            <option selected disabled value="">mm</option>
+                                            <option>Январь</option>
+                                            <option>Февраль</option>
+                                            <option>Март</option>
+                                        </select>
+                                        <select class="form-control form-select" required>
+                                            <option selected disabled value="">hh:mm</option>
+                                            <option>11:00</option>
+                                            <option>12:00</option>
+                                            <option>13:00</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="center-block">
+                                    <p>Нажмите на текст если не знаете</p>
+                                    <a href="#">какого врача выбрать?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="3" placeholder="Описание проблемы"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="">
+                                    <p class="ms-4">
+                                        Отправляя запрос Вы соглашаетесь с
+                                        <a href="#">правилами</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="">
+                                    <p class="ms-4">
+                                        Вы можете отменить регистрацию с возвратом денег за 24 часа до выбраного
+                                        времени!
+                                        Менее 24 -х часов до назначеного времени возврат денег не возможен.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="button">
+                                    <input type="submit" class="btn btn-primary m-auto" value="Отправить">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="our-team">
+            <div class="container">
+                <div class="row">
+                    <div class="b-bottom">
+                        <h2>Наши специалисты</h2>
+                    </div>
+                    
+                    <div class="services">
+                        <div class="text-align">
+                            <p>Выберите отделение:</p>
+                        </div>
+                        <div class="d-flex flex-wrap">
+                            <div class="col-md-4 col-12">
+                                <div class="service-item">
+                                    <a href="#" class="link">Отделение хирургической офтальмологии</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div class="service-item">
+                                    <a href="#" class="link">Отделение детских патологий и физиотерапевтического лечения</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div class="service-item">
+                                    <a href="#" class="link">Отделение оториноларингологии</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div class="service-item">
+                                    <a href="#" class="link">Отделение рефракционно-лазерной коррекции зрения</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div class="service-item">
+                                    <a href="#" class="link">Отделение патологий сетчатки</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="our-team-item">
+                            <div class="our-team-img">
+                                <img src="./img/team-1.png" alt="...">
+                            </div>
+                            <div class="our-team-body">
+                                <h5 class="our-team-title">Танурков Федор Петрович</h5>
+                                <p class="our-team-text">Врач офтальмолог, хирург</p>
+                            </div>
+                        </div>
+                        <div class="our-team-item">
+                            <div class="our-team-img">
+                                <img src="./img/team-2.png" alt="...">
+                            </div>
+                            <div class="our-team-body">
+                                <h5 class="our-team-title">Кощук Александр Федорович</h5>
+                                <p class="our-team-text">Врач офтальмолог, хирург</p>
+                            </div>
+                        </div>
+                        <div class="our-team-item">
+                            <div class="our-team-img">
+                                <img src="./img/team-3.png" alt="...">
+                            </div>
+                            <div class="our-team-body">
+                                <h5 class="our-team-title">Кучук Вероника Владимировна</h5>
+                                <p class="our-team-text">Врач офтальмолог, хирург</p>
+                            </div>
+                        </div>
+                        <div class="our-team-item">
+                            <div class="our-team-img">
+                                <img src="./img/team-4.png" alt="...">
+                            </div>
+                            <div class="our-team-body">
+                                <h5 class="our-team-title">Мартынюк Марина Николаевна</h5>
+                                <p class="our-team-text">Врач офтальмолог, хирург</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary">Все врачи</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/slick-carousel/slick/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
