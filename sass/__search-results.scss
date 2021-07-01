@@ -1,0 +1,23 @@
+.search-result__title {
+    position: relative;
+    padding: 20px 0;
+    margin: 20px 12px;
+    border-bottom: 2px solid $light-grey;
+    width: calc(100% - 24px);
+
+    h4 {
+        padding-left: 20px;
+        margin: 0;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: calc(50% - 7px);
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: $blue;
+    }
+}
+
