@@ -89,14 +89,22 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
+    padding: 20px 0;
 
-    .heading {
+    &:before {
+        content: '';
         position: absolute;
+        top: 0;
         left: 0;
         right: 0;
+        bottom: 0;
+        background-color: rgba($color: $white, $alpha: 0.7);
+    }
 
-        p {
-            border-bottom: 2px solid $blue;
+    .heading {
+        border-bottom: 2px solid $blue;
+
+        p {    
             max-width: 250px;
         }
     }
@@ -106,10 +114,12 @@ header {
     }
 
     p {
-        margin: 20px auto;
+        margin: 0 auto 20px;
     }
 
     .banner-text {
+        position: relative;
+        z-index: 1;
         padding: 0 12px;
         text-align: center;
     }
@@ -190,6 +200,10 @@ header {
     .banner {
         padding: 100px 0;
         flex-direction: row-reverse;
+
+        &:before {
+            background-color: transparent;
+        }
 
         .banner-text {
             text-align: left;

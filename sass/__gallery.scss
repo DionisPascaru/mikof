@@ -71,12 +71,22 @@
         }
     
         .gallery-item {
-            width: 260px;
+            width: calc(50% - 20px);
             height: 260px;
         }
 
         .button {
             text-align: center;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    .gallery {
+        .gallery-item {
+            width: calc(25% - 20px);
+            height: 260px;
         }
     }
 }

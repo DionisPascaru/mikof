@@ -34,7 +34,7 @@ body {
     &:after {
         content: '';
         width: 100px;
-        border-bottom: 3px solid #0094d6;
+        border-bottom: 3px solid $blue;
         position: absolute;
         left: 0;
         right: 0;
@@ -133,7 +133,7 @@ section {
 
 .back-arrow {
     position: absolute;
-    top: 5px;
+    top: 40%;
     left: 0;
     width: 25px;
     height: 25px;
@@ -204,6 +204,50 @@ section {
     }
 }
 
+.text-light-grey {
+    color: $grey;
+}
+
+.heading {
+    position: relative;
+
+    h1, h2 {
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+}
+
+.block-item__title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.block-item__body {
+    padding: 20px 0;
+}
+
+.block-item__img {
+    max-height: 200px;
+    overflow: hidden;
+    
+    img {
+        width: 100%;
+    }
+}
+
+.search {
+    display: none;
+}
+
+.login-form {
+    padding: 30px;
+
+    .modal-header {
+        border: none;
+    }
+}
+
+
 @media only screen and (min-width: 448px) {
     section {
         padding: 50px 0;
@@ -232,6 +276,10 @@ section {
         }
     }
 
+    h2 {
+        margin: 20px 0;
+    }
+
     .button {
         text-align: left;
     }
@@ -241,11 +289,37 @@ section {
     }
 
     .back-arrow {
-        top: 10px;
         left: -50px;
     }
 
     .page-not-found {
         text-align: start;
+    }
+
+    .heading {
+        h1, h2 {
+            width: 100%;
+        }
+    }
+
+    .search {
+        display: block;
+        max-width: 500px;
+        margin: 20px 0;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            background-image: url('../icons/loupe.svg');
+            background-repeat: no-repeat;
+            background-size: 22px;
+            background-position: center;
+            top:0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: 60px;
+        }
     }
 }
