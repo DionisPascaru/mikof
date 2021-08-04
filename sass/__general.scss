@@ -240,7 +240,7 @@ section {
 }
 
 .login-form {
-    padding: 30px;
+    padding: 0;
 
     .modal-header {
         border: none;
@@ -259,6 +259,10 @@ section {
         table {
             margin: 0;
         }
+    }
+
+    .login-form {
+        padding: 30px;
     }
 }
 

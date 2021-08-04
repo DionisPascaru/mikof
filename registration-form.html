@@ -16,7 +16,7 @@
     <main>
         <section class="light-grey-bg">
             <div class="container">
-                <div class="registration-form box-shadow">
+                <div class="form box-shadow">
                     <div class="d-flex">
                         <div class="b-bottom">
                             <h2>Наши специалисты</h2>
@@ -90,25 +90,28 @@
                                 </div>
                                 <div class="mb-3">
                                     <p class="text-center">Выбор даты:</p>
-                                    <div class="d-sm-flex">
+                                    <div class="d-flex justify-content-center">
+                                       <div class="mb-3">
                                         <select class="form-control form-select" required>
-                                            <option selected disabled value="">dd</option>
                                             <option>01</option>
                                             <option>02</option>
                                             <option>03</option>
                                         </select>
-                                        <select class="form-control form-select ms-sm-4 me-sm-4" required>
-                                            <option selected disabled value="">mm</option>
-                                            <option>Январь</option>
-                                            <option>Февраль</option>
-                                            <option>Март</option>
-                                        </select>
-                                        <select class="form-control form-select" required>
-                                            <option selected disabled value="">hh:mm</option>
-                                            <option>11:00</option>
-                                            <option>12:00</option>
-                                            <option>13:00</option>
-                                        </select>
+                                       </div>
+                                        <div class="mb-3">
+                                            <select class="form-control form-select" required>
+                                                <option>Январь</option>
+                                                <option>Февраль</option>
+                                                <option>Март</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <select class="form-control form-select" required>
+                                                <option>11:00</option>
+                                                <option>12:00</option>
+                                                <option>13:00</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -124,7 +127,7 @@
                                 <textarea class="form-control" rows="3" placeholder="Описание проблемы"></textarea>
                             </div>
                             <div class="mb-3">
-                                <div class="form-check">
+                                <div class="form-check form-checkbox">
                                     <input class="form-check-input" type="checkbox" value="">
                                     <p class="ms-4">
                                         Отправляя запрос Вы соглашаетесь с
@@ -133,7 +136,7 @@
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <div class="form-check">
+                                <div class="form-check form-checkbox">
                                     <input class="form-check-input" type="checkbox" value="">
                                     <p class="ms-4">
                                         Вы можете отменить регистрацию с возвратом денег за 24 часа до выбраного
