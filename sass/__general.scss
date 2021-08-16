@@ -211,7 +211,8 @@ section {
 .heading {
     position: relative;
 
-    h1, h2 {
+    h1,
+    h2 {
         width: 80%;
         margin: 0 auto 20px;
     }
@@ -229,7 +230,7 @@ section {
 .block-item__img {
     max-height: 200px;
     overflow: hidden;
-    
+
     img {
         width: 100%;
     }
@@ -255,7 +256,7 @@ section {
 
     .contact {
         text-align: start;
-    
+
         table {
             margin: 0;
         }
@@ -301,7 +302,9 @@ section {
     }
 
     .heading {
-        h1, h2 {
+
+        h1,
+        h2 {
             width: 100%;
         }
     }
@@ -319,7 +322,7 @@ section {
             background-repeat: no-repeat;
             background-size: 22px;
             background-position: center;
-            top:0;
+            top: 0;
             right: 0;
             bottom: 0;
             height: 100%;

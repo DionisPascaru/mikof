@@ -1,0 +1,17 @@
+.search {
+    .search-field {
+        min-width: 300px;
+        padding: 10px 20px;
+        border: 1px solid $light-grey;
+    }
+
+    &::after {
+        width: 46px;
+        border-left: 1px solid $light-grey;
+
+        &:hover {
+            background-color: $light-grey;
+            cursor: pointer;
+        }
+    }
+}

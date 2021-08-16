@@ -187,7 +187,8 @@ section {
 .heading {
   position: relative;
 }
-.heading h1, .heading h2 {
+.heading h1,
+.heading h2 {
   width: 80%;
   margin: 0 auto 20px;
 }
@@ -268,7 +269,8 @@ section {
     text-align: start;
   }
 
-  .heading h1, .heading h2 {
+  .heading h1,
+.heading h2 {
     width: 100%;
   }
 
@@ -1038,4 +1040,17 @@ footer .copyright p {
   footer .logo p {
     margin: 0;
   }
+}
+.search .search-field {
+  min-width: 300px;
+  padding: 10px 20px;
+  border: 1px solid #e7e9ec;
+}
+.search::after {
+  width: 46px;
+  border-left: 1px solid #e7e9ec;
+}
+.search::after:hover {
+  background-color: #e7e9ec;
+  cursor: pointer;
 }

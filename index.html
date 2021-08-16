@@ -98,26 +98,31 @@
             </div>
             <div class="navbar-bootom">
                 <div class="container">
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Галерея</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">О центре</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Статьи</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Помощь</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Отзывы</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Контакты</a>
-                        </li>
-                    </ul>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="search">
+                            <input type="text" class="search-field form-control" placeholder="Поиск...">
+                        </div>
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Галерея</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">О центре</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Статьи</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Помощь</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Отзывы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -159,8 +164,8 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="tab search">
-                        <a href="#">
+                    <div class="tab">
+                        <div class="search">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.005 512.005"
                                 style="enable-background:new 0 0 512.005 512.005;" xml:space="preserve">
@@ -174,7 +179,10 @@
                                     </g>
                                 </g>
                             </svg>
-                        </a>
+                        </div>
+                        <div class="search">
+                            <input type="text" class="search-field form-control box-shadow" placeholder="Поиск...">
+                        </div>
                     </div>
                     <div id="collapse-btn" class="tab">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
