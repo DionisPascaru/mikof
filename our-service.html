@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,15 +11,39 @@
     <link rel="stylesheet" href="./css/main.css">
     <title>Мы лечим</title>
 </head>
+
 <body>
     <main>
         <section>
             <div class="container">
-                <div class="services">
+                <div class="services mb-5 mt-5">
                     <div class="b-bottom">
                         <h2>Мы лечим</h2>
                     </div>
-                    <div class="d-flex flex-wrap">
+                    <div class="accordion services-dropdown" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Отделение хирургической офтальмологии
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul class="dropdown-list" aria-labelledby="dropdownMenuLink">
+                                        <li class="service-item"><a href="#">Отделение детских патологий и
+                                                физиотерапевтического лечения</a></li>
+                                        <li class="service-item"><a href="#">Отделение оториноларингологии</a></li>
+                                        <li class="service-item"><a href="#">Отделение рефракционно-лазерной коррекции
+                                                зрения</a></li>
+                                        <li class="service-item"><a href="#">Отделение патологий сетчатки</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-wrap services-desk">
                         <div class="col-md-4 col-12">
                             <div class="service-item">
                                 <a href="#" class="link">Отделение хирургической офтальмологии</a>
@@ -53,31 +78,31 @@
                 <div id="slider-carousel" class="carousel">
                     <div class="slider-item">
                         <div class="slide-img">
-                            <img src="./img/slide-1.jpg" class="img-fluid" alt="...">
+                            <img src="./img/slide-1.jpg" alt="...">
                         </div>
                         <p>Катаракта</p>
                     </div>
                     <div class="slider-item">
                         <div class="slide-img">
-                            <img src="./img/slide-2.jpg" class="img-fluid" alt="...">
+                            <img src="./img/slide-2.jpg" alt="...">
                         </div>
                         <p>Глаукома</p>
                     </div>
                     <div class="slider-item">
                         <div class="slide-img">
-                            <img src="./img/slide-3.jpg" class="img-fluid" alt="...">
+                            <img src="./img/slide-3.jpg" alt="...">
                         </div>
                         <p>Косоглазие</p>
                     </div>
                     <div class="slider-item">
                         <div class="slide-img">
-                            <img src="./img/slide-4.jpg" class="img-fluid" alt="...">
+                            <img src="./img/slide-4.jpg" alt="...">
                         </div>
                         <p>Отслойка сетчатки</p>
                     </div>
                     <div class="slider-item">
                         <div class="slide-img">
-                            <img src="./img/slide-4.jpg" class="img-fluid" alt="...">
+                            <img src="./img/slide-4.jpg" alt="...">
                         </div>
                         <p>Отслойка сетчатки</p>
                     </div>
@@ -96,13 +121,14 @@
                     <p>Или запишитесь на прием по телефону:</p>
                     <p><b>+373 22 55 83 65</b></p>
                 </div>
-            </div>            
+            </div>
         </section>
     </main>
-    
-    <script src="./bootstrap/dist/js/bootstrap.js"></script>
+
+    <script src="./bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./jquery/dist/jquery.min.js"></script>
     <script src="./slick-carousel/slick/slick.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
+
 </html>

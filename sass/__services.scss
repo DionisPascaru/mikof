@@ -9,9 +9,11 @@
 
     .service-item {
         width: 100%;
-        border: 2px solid $light-grey;
+        max-width: 320px;
+        border: 2px solid $grey;
         margin: 10px 0;
         padding: 10px;
+        font-size: 18px;
     }
 
     .services-title {
@@ -22,6 +24,72 @@
     .service-head {
         width: 100%;
         text-align: center;
+    }
+
+    .b-bottom {
+        &:after {
+            right: 0;
+        }
+    }
+
+    .services-desk {
+        display: none;
+    }
+
+    
+
+    .services-dropdown {
+        width: 100%;
+
+        .service-item {
+            max-width: none;
+            border: none;
+
+            a {
+                text-decoration: none;
+                color: $grey;
+            }
+        }
+
+        .dropdown-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .accordion-header {
+            margin-top: 0;
+            padding: 0 1.25rem 0;
+        }
+
+        .accordion-body {
+            padding: 0 1.25rem 1rem;
+        }
+
+        .accordion-button {
+            padding: 20px 10px;
+            font-size: 18px;
+        }
+
+        .accordion-button:not(.collapsed) {
+            box-shadow: none;
+        }
+
+        .accordion-button {
+            &::after {
+                background-image: url("../icons/down.svg");
+                transform:rotate(270deg);
+                -ms-transform:rotate(270deg);
+                -webkit-transform:rotate(270deg);
+            }
+
+            &[aria-expanded=true] {
+                &::after{
+                    transform:rotate(90deg);
+                    -ms-transform:rotate(90deg);
+                    -webkit-transform:rotate(90deg);
+                }
+            }
+        }
     }
 }
 
@@ -42,6 +110,20 @@
         .service-head {
             width: 100%;
             text-align: start;
+        }
+
+        .b-bottom {
+            &:after {
+                right: auto;
+            }
+        }
+
+        .services-desk {
+            display: flex;
+        }
+
+        .services-dropdown {
+            display: none;
         }
     }
 }

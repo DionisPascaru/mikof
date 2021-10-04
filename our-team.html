@@ -19,11 +19,34 @@
                 <div class="b-bottom">
                     <h2>Наши специалисты</h2>
                 </div>
-                <div class="services">
+                <div class="services mt-5 mb-5">
                     <div class="text-center m-auto">
                         <p>Выберите отделение:</p>
                     </div>
-                    <div class="d-flex flex-wrap">
+                    <div class="accordion services-dropdown" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Отделение хирургической офтальмологии
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul class="dropdown-list" aria-labelledby="dropdownMenuLink">
+                                        <li class="service-item"><a href="#">Отделение детских патологий и
+                                                физиотерапевтического лечения</a></li>
+                                        <li class="service-item"><a href="#">Отделение оториноларингологии</a></li>
+                                        <li class="service-item"><a href="#">Отделение рефракционно-лазерной коррекции
+                                                зрения</a></li>
+                                        <li class="service-item"><a href="#">Отделение патологий сетчатки</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-wrap services-desk">
                         <div class="col-md-4 col-12">
                             <div class="service-item">
                                 <a href="#" class="link">Отделение хирургической офтальмологии</a>
@@ -52,13 +75,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row justify-content-center justify-content-md-between">
                     <div class="col-md-3 col-sm-6 our-team-item">
                         <div class="our-team-img">
                             <img src="./img/team-1.png" alt="...">
                         </div>
                         <div class="our-team-body">
-                            <h5 class="our-team-title">Танурков Федор Петрович</h5>
+                            <h5 class="our-team-title"><a href="#">Танурков Федор Петрович</a></h5>
                             <p class="our-team-text">Врач офтальмолог, хирург</p>
                         </div>
                     </div>
@@ -67,7 +90,7 @@
                             <img src="./img/team-2.png" alt="...">
                         </div>
                         <div class="our-team-body">
-                            <h5 class="our-team-title">Кощук Александр Федорович</h5>
+                            <h5 class="our-team-title"><a href="#">Кощук Александр Федорович</a></h5>
                             <p class="our-team-text">Врач офтальмолог, хирург</p>
                         </div>
                     </div>
@@ -76,7 +99,7 @@
                             <img src="./img/team-3.png" alt="...">
                         </div>
                         <div class="our-team-body">
-                            <h5 class="our-team-title">Кучук Вероника Владимировна</h5>
+                            <h5 class="our-team-title"><a href="#">Кучук Вероника Владимировна</a></h5>
                             <p class="our-team-text">Врач офтальмолог, хирург</p>
                         </div>
                     </div>
@@ -85,18 +108,16 @@
                             <img src="./img/team-4.png" alt="...">
                         </div>
                         <div class="our-team-body">
-                            <h5 class="our-team-title">Мартынюк Марина Николаевна</h5>
+                            <h5 class="our-team-title"><a href="#">Мартынюк Марина Николаевна</a></h5>
                             <p class="our-team-text">Врач офтальмолог, хирург</p>
                         </div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-md-3 col-sm-6 our-team-item">
                         <div class="our-team-img">
                             <img src="./img/team-5.png" alt="...">
                         </div>
                         <div class="our-team-body">
-                            <h5 class="our-team-title">Казаку Родика Ивановна</h5>
+                            <h5 class="our-team-title"><a href="#">Казаку Родика Ивановна</a></h5>
                             <p class="our-team-text">Врач офтальмолог, хирург</p>
                         </div>
                     </div>
@@ -105,7 +126,7 @@
                             <img src="./img/team-6.png" alt="...">
                         </div>
                         <div class="our-team-body">
-                            <h5 class="our-team-title">Крестинкова Марина Михайловна</h5>
+                            <h5 class="our-team-title"><a href="#">Крестинкова Марина Михайловна</a></h5>
                             <p class="our-team-text">Врач офтальмолог, хирург</p>
                         </div>
                     </div>
@@ -114,7 +135,7 @@
                             <img src="./img/team-7.png" alt="...">
                         </div>
                         <div class="our-team-body">
-                            <h5 class="our-team-title">Иванов Владимир Афанасьевич</h5>
+                            <h5 class="our-team-title"><a href="#">Иванов Владимир Афанасьевич</a></h5>
                             <p class="our-team-text">Врач офтальмолог, хирург</p>
                         </div>
                     </div>
@@ -123,17 +144,19 @@
                             <img src="./img/team-8.png" alt="...">
                         </div>
                         <div class="our-team-body">
-                            <h5 class="our-team-title">Кондря Сергей Ильич</h5>
+                            <h5 class="our-team-title"><a href="#">Кондря Сергей Ильич</a></h5>
                             <p class="our-team-text">Врач офтальмолог, хирург</p>
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-primary">Все врачи</button>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-primary">Все врачи</button>
+                </div>
             </div>
         </section>
         <section>
             <div class="container">
-                <div class="text-center">
+                <div class="text-center sing-up-block">
                     <div class="block-title">
                         <h2>Запишитесь сейчас на прием к врачу</h2>
                     </div>

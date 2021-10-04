@@ -29,7 +29,30 @@
         <section>
             <div class="container">
                 <div class="services">
-                    <div class="d-flex flex-wrap">
+                    <div class="accordion services-dropdown" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Отделение хирургической офтальмологии
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul class="dropdown-list" aria-labelledby="dropdownMenuLink">
+                                        <li class="service-item"><a href="#">Отделение детских патологий и
+                                                физиотерапевтического лечения</a></li>
+                                        <li class="service-item"><a href="#">Отделение оториноларингологии</a></li>
+                                        <li class="service-item"><a href="#">Отделение рефракционно-лазерной коррекции
+                                                зрения</a></li>
+                                        <li class="service-item"><a href="#">Отделение патологий сетчатки</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-wrap services-desk">
                         <div class="col-md-4 col-12">
                             <div class="service-item">
                                 <a href="#" class="link">Отделение хирургической офтальмологии</a>
@@ -100,7 +123,7 @@
         </section>
         <section>
             <div class="container">
-                <div class="text-center">
+                <div class="text-center sing-up-block">
                     <div class="block-title">
                         <h2>Запишитесь сейчас на прием к врачу</h2>
                     </div>
