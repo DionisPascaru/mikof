@@ -1,6 +1,7 @@
 footer {
     background-color: #919ba6;
-    padding: 50px 0 0;
+    padding: 35px 0 0;
+    min-height: 470px;
 
     .logo {
         display: flex;
@@ -26,13 +27,29 @@ footer {
         color: $white;
     }
 
+    .btn-primary {
+        background-color: transparent;
+        border: 2px solid #fff;
+        max-width: none;
+        margin: 30px 0;
+
+        &:hover {
+            border-color: #fff;
+        }
+    }
+
     .nav-link {
         color: $white;
     }
 
+    .social-media {
+        padding: 10px 0;
+        border-bottom: none;
+    }
+
     .copyright {
         background-color: #717982;
-        padding: 30px 15px;
+        padding: 18px 0;
         
         p {
             color: $grey;
@@ -48,20 +65,24 @@ footer {
     margin: 20px 0;
 
     .social-icon {
-        margin: 5px;
+        margin: 20px 20px 20px 0;
 
-        svg {
-            width: 25px;
-            fill: $grey;
+        span {
+            font-size: 20px;
+            color: $grey;
         }
 
-        a:hover svg {
-            fill: $white;
+        a {
+            text-decoration: none;
+
+            &:hover span {
+                color: $white;
+            }
         }
     }
 }
 
-@media only screen and (min-width: 448px){
+@media only screen and (min-width: 768px){
     footer {
         .logo {
             display: block;
@@ -69,6 +90,11 @@ footer {
             p {
                 margin: 0;
             }
+        }
+
+        .btn-primary {
+            max-width: 300px;
+            margin: 0;
         }
     }
 }

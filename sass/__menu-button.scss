@@ -1,4 +1,4 @@
-#collapse-btn {
+.collapse-btn {
     position: relative;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -24,7 +24,7 @@
     }
 }
 
-#collapse-btn span {
+.collapse-btn span {
     display: block;
     position: absolute;
     height: 2px;
@@ -42,7 +42,16 @@
     transition: .25s ease-in-out;
 }
 
-#collapse-btn span:nth-child(1) {
+#desk-collapse-btn.collapse-btn {
+    padding: 15px 0 15px 15px;
+
+    span {
+        background: $blue;
+        height: 4px;
+    }
+}
+
+.collapse-btn span:nth-child(1) {
     top: 0px;
     -webkit-transform-origin: left center;
     -moz-transform-origin: left center;
@@ -50,7 +59,7 @@
     transform-origin: left center;
 }
 
-#collapse-btn span:nth-child(2) {
+.collapse-btn span:nth-child(2) {
     top: 8px;
     -webkit-transform-origin: left center;
     -moz-transform-origin: left center;
@@ -58,7 +67,7 @@
     transform-origin: left center;
 }
 
-#collapse-btn span:nth-child(3) {
+.collapse-btn span:nth-child(3) {
     top: 16px;
     -webkit-transform-origin: left center;
     -moz-transform-origin: left center;
@@ -66,7 +75,7 @@
     transform-origin: left center;
 }
 
-#collapse-btn.open span:nth-child(1) {
+.collapse-btn.open span:nth-child(1) {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
@@ -75,12 +84,12 @@
     left: 3px;
 }
 
-#collapse-btn.open span:nth-child(2) {
+.collapse-btn.open span:nth-child(2) {
     width: 0%;
     opacity: 0;
 }
 
-#collapse-btn.open span:nth-child(3) {
+.collapse-btn.open span:nth-child(3) {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);

@@ -1,6 +1,6 @@
 .form {
     background-color: $white;
-    padding: 30px;
+    padding: 30px 10px;
 
     h2 {
          margin: 0;
@@ -81,7 +81,7 @@
     }
 
     .scroll-table-mobile {
-        overflow-x: scroll;
+        overflow-x: auto;
     }
 }
 
