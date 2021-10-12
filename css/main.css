@@ -130,18 +130,32 @@ section {
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #fff;
+  background-color: transparent;
   color: #c3c3c3;
-}
-.accordion-button:not(.collapsed):after {
-  background-image: url("../icons/add.svg");
-  transform: rotate(-135deg);
 }
 .accordion-button:focus {
   box-shadow: none;
 }
-.accordion-button:after {
-  background-image: url("../icons/add.svg");
+
+.questions .accordion-button div {
+  width: 100%;
+}
+.questions .accordion-button::after {
+  background-image: none;
+}
+.questions .accordion-button span {
+  position: absolute;
+  right: 0;
+  transition: all 0.5s;
+  color: #0094d6;
+}
+.questions .accordion-button:not(.collapsed) {
+  background-color: transparent;
+}
+.questions .accordion-button:not(.collapsed) span {
+  transform: rotate(-135deg);
+  transition: all 0.5s;
+  color: #c3c3c3;
 }
 
 .light-grey-bg {
@@ -384,21 +398,23 @@ header .phone span {
 }
 
 .navbar-expand-md .search-input {
-  visibility: hidden;
   position: absolute;
   top: 46px;
   left: 0;
   right: 0;
   width: 100%;
-  height: 0;
-  z-index: 999;
+  max-width: 420px;
+  margin: auto;
+  height: 46px;
+  z-index: -1;
+  opacity: 0;
 }
 .navbar-expand-md .search-input .form-control {
   padding: 10px;
 }
 .navbar-expand-md .search-input.active {
-  visibility: visible;
-  height: 46px;
+  opacity: 1;
+  z-index: 999;
 }
 
 .navbar-collapse .navbar-nav {
@@ -597,7 +613,7 @@ header .phone span {
 @media only screen and (min-width: 1550px) {
   .collapse-btn-group {
     position: absolute;
-    right: -50px;
+    right: -90px;
   }
 }
 .collapse-btn {
@@ -643,7 +659,7 @@ header .phone span {
 }
 
 #desk-collapse-btn.collapse-btn {
-  padding: 15px 0 15px 15px;
+  margin: 15px 0 15px 15px;
 }
 #desk-collapse-btn.collapse-btn span {
   background: #0094d6;
@@ -729,6 +745,7 @@ header .phone span {
 }
 .services .services-dropdown {
   width: 100%;
+  max-width: 670px;
 }
 .services .services-dropdown .service-item {
   max-width: none;
@@ -778,7 +795,7 @@ header .phone span {
   .services .service-item {
     border: none;
     margin: 10px 0;
-    padding: 0 10px 0 0;
+    padding: 20px 10px;
   }
   .services .service-head {
     width: 100%;
@@ -943,6 +960,16 @@ header .phone span {
     margin: 30px 0;
   }
   .about-us .b-bottom:after {
+    right: auto;
+  }
+
+  .our-team .services {
+    display: block;
+  }
+  .our-team .b-bottom {
+    justify-content: flex-start;
+  }
+  .our-team .b-bottom:after {
     right: auto;
   }
 
@@ -1253,8 +1280,7 @@ footer button {
   color: #fff;
 }
 footer .btn-primary {
-  background-color: transparent;
-  border: 2px solid #fff;
+  background-color: #0094d6;
   max-width: none;
   margin: 30px 0;
 }
@@ -1266,7 +1292,6 @@ footer .nav-link {
 }
 footer .social-media {
   padding: 10px 0;
-  border-bottom: none;
 }
 footer .copyright {
   background-color: #717982;
@@ -1276,12 +1301,16 @@ footer .copyright p {
   color: #c3c3c3;
   margin: 0;
 }
+footer .hide-on-mobile {
+  display: none;
+}
 
 .social-media {
   border-top: 2px solid #c3c3c3;
   border-bottom: 2px solid #c3c3c3;
   padding: 10px;
   margin: 20px 0;
+  justify-content: center;
 }
 .social-media .social-icon {
   margin: 20px 20px 20px 0;
@@ -1308,19 +1337,28 @@ footer .copyright p {
     max-width: 300px;
     margin: 0;
   }
+  footer .hide-on-descktop {
+    display: none;
+  }
+  footer .hide-on-mobile {
+    display: block;
+  }
+  footer .social-media {
+    border-bottom: none;
+  }
 }
 .search {
-  position: absolute;
-  left: 0;
+  position: relative;
   max-width: 500px;
 }
 .search .search-field {
+  position: absolute;
+  right: 30px;
   visibility: hidden;
   width: 0;
   height: 46px;
   max-width: 320px;
   padding: 0;
-  margin-left: 46px;
   border: 1px solid #fbfbfb;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -1330,7 +1368,8 @@ footer .copyright p {
 .search.active .search-field {
   visibility: visible;
   width: 320px;
-  padding: 10px 20px;
+  padding: 11px 20px;
+  box-shadow: 0 0 20px 0px #c3c3c3;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -1340,26 +1379,17 @@ footer .copyright p {
   background-color: #fff;
   transition-delay: 0ms;
 }
-.search.active .search-btn span {
-  color: #c3c3c3;
-  transition-delay: 0s;
-}
 .search .search-btn {
-  position: absolute;
   background-color: transparent;
   border: none;
-  min-width: 46px;
-  height: 46px;
+  padding: 15px 0 15px 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition-delay: 0.5s;
-  transition-property: background-color;
 }
 .search .search-btn span {
   font-size: 20px;
-  transition-delay: 0.5s;
-  color: #fff;
+  color: #c3c3c3;
 }
 .search::after {
   width: 46px;
@@ -1368,6 +1398,16 @@ footer .copyright p {
 .search::after:hover {
   background-color: #fbfbfb;
   cursor: pointer;
+}
+
+.search-form {
+  border: 1px solid #c3c3c3;
+  border-radius: 0;
+  padding: 20px;
+}
+.search-form .form-control {
+  border: none;
+  padding: 0;
 }
 
 .icon-add:before {

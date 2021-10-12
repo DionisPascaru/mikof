@@ -28,7 +28,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-       
+
         &:focus {
             box-shadow: none;
         }
@@ -67,23 +67,25 @@ header {
 
 .navbar-expand-md {
     .search-input {
-       visibility: hidden;
-       position: absolute;
-       top: 46px;
-       left: 0;
-       right: 0;
-       width: 100%;
-       height: 0;
-       z-index: 999;
+        position: absolute;
+        top: 46px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-width: 420px;
+        margin: auto;
+        height: 46px;
+        z-index: -1;
+        opacity: 0;
 
-       .form-control {
-           padding: 10px;
-       }
+        .form-control {
+            padding: 10px;
+        }
 
 
         &.active {
-           visibility: visible;
-           height: 46px;
+            opacity: 1;
+            z-index: 999;
         }
     }
 }
@@ -108,7 +110,7 @@ header {
 
 .navbar-top {
     border: 2px solid $light-grey;
-    
+
     .lang {
         .nav-link {
             margin-right: 15px;
@@ -122,7 +124,7 @@ header {
         &.active {
             color: $blue;
         }
-    }    
+    }
 }
 
 .navbar-center {
@@ -141,7 +143,7 @@ header {
     -moz-transition: .5s ease-in-out;
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
-    
+
     .nav-link {
         font-size: 20px;
     }
@@ -172,7 +174,7 @@ header {
     .heading {
         padding: 20px;
 
-        p {    
+        p {
             max-width: 250px;
             margin: auto;
 
@@ -205,9 +207,9 @@ header {
 
 .banner-mobile-block {
     margin: 0 -12px;
-    box-shadow: 
+    box-shadow:
         inset 0px 80px 75px 10px #fff,
-        inset 0px -80px 75px -10px #fff; 
+        inset 0px -80px 75px -10px #fff;
 
     img {
         position: relative;
@@ -327,9 +329,9 @@ header {
     }
 }
 
-@media only screen and (min-width: 1550px){
+@media only screen and (min-width: 1550px) {
     .collapse-btn-group {
         position: absolute;
-        right: -50px;
+        right: -90px;
     }
 }

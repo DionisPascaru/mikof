@@ -125,6 +125,20 @@
         }
     }
 
+    .our-team {
+        .services {
+            display: block;
+        }
+
+        .b-bottom {
+            justify-content: flex-start;
+
+            &:after {
+                right: auto;
+            }
+        }
+    }
+
     .team-member {
         padding-left: 80px;
 

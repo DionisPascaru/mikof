@@ -40,6 +40,7 @@
 
     .services-dropdown {
         width: 100%;
+        max-width: 670px;
 
         .service-item {
             max-width: none;
@@ -104,7 +105,7 @@
         .service-item {
             border: none;
             margin: 10px 0;
-            padding: 0 10px 0 0;
+            padding: 20px 10px;
         }
 
         .service-head {

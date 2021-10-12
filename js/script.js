@@ -11,13 +11,21 @@ deskMenuBtn.on('click', function () {
     $('.navbar-bootom').toggleClass('open');
 });
 
-$('#search-btn').on('click', function(){
+// header search button
+$('#search-btn').on('click', function () {
     $('#search-field').toggleClass('active');
+    setTimeout(() => {
+        $('#search-input').focus();
+    }, 500);
 });
 
-// header search button
-$('#mobile-search-btn').on('click', function(){
-    $("#mobile-search-field").toggleClass('active');
+// mobile search button
+$('#mobile-search-btn').click(function (e) {
+    $('#mobile-search-field').toggleClass('active');
+    if(!$(this).hasClass('active')) {
+        $('#mobile-search-input').trigger("focus");
+    }
+   
 });
 
 // slick carousel
