@@ -1,15 +1,15 @@
 .search {  
-    position: absolute;
-    left: 0;
+    position: relative;
     max-width: 500px;
     
     .search-field {
+        position: absolute;
+        right: 30px;
         visibility: hidden;
         width: 0;
         height: 46px;
         max-width: 320px;
         padding: 0;
-        margin-left: 46px;
         border: 1px solid $light-grey;
         -webkit-transition: all  .5s ease-in-out;
         -moz-transition: all  .5s ease-in-out;
@@ -21,7 +21,8 @@
         .search-field {
             visibility: visible;
             width: 320px;
-            padding: 10px 20px;
+            padding: 11px 20px;
+            box-shadow: 0 0 20px 0px #c3c3c3;
             -webkit-transition: all  .5s ease-in-out;
             -moz-transition: all  .5s ease-in-out;
             -o-transition: all  .5s ease-in-out;
@@ -31,30 +32,20 @@
         .search-btn {
             background-color: $white;
             transition-delay: 0ms;            
-
-            span {
-                color: $grey;
-                transition-delay: 0s;
-            }
         }
     }
 
     .search-btn {
-        position: absolute;
         background-color: transparent;
         border: none;
-        min-width: 46px;
-        height: 46px;
+        padding: 15px 0 15px 15px;
         display: flex;
         justify-content: center;
         align-items: center;
-        transition-delay: .5s;
-        transition-property: background-color;
         
         span {
             font-size: 20px;
-            transition-delay: .5s;
-            color: $white;
+            color: $grey;
         }
     }
     
@@ -67,5 +58,16 @@
             background-color: $light-grey;
             cursor: pointer;
         }
+    }
+}
+
+.search-form {
+    border: 1px solid #c3c3c3;
+    border-radius: 0;
+    padding: 20px;
+
+    .form-control {
+        border: none;
+        padding: 0;
     }
 }

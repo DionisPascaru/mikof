@@ -39,7 +39,8 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Регистратура</a>
+                                <a class="nav-link" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Регистратура</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">График работы </a>
@@ -80,8 +81,15 @@
                                 </li>
                             </ul>
                         </div>
-                        
+
                         <div class="collapse-btn-group d-flex">
+                            <div id="search-field" class="search d-flex">
+                                <input id="search-input" type="text" class="search-field form-control"
+                                    placeholder="Поиск..." id>
+                                <button id="search-btn" class="search-btn">
+                                    <span class="icon-loupe"></span>
+                                </button>
+                            </div>
                             <div id="desk-collapse-btn" class="collapse-btn">
                                 <button class="navbar-toggler">
                                     <span></span>
@@ -96,12 +104,6 @@
             <div class="navbar-bootom" id="navbarNavDesk">
                 <div class="container">
                     <div class="d-flex justify-content-end align-items-center position-relative">
-                        <div id="search-field" class="search d-flex">
-                            <input type="text" class="search-field form-control" placeholder="Поиск..." id>
-                            <button id="search-btn" class="search-btn">
-                                <span class="icon-loupe"></span>
-                            </button>
-                        </div>
                         <ul class="nav justify-content-end">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Галерея</a>
@@ -157,7 +159,8 @@
                             <span class="icon-loupe"></span>
                         </div>
                         <div id="mobile-search-field" class="search-input">
-                            <input type="text" class="search-field form-control box-shadow" placeholder="Поиск...">
+                            <input id="mobile-search-input" name="search" type="text"
+                                class="search-field form-control box-shadow" placeholder="Поиск...">
                         </div>
                     </div>
                     <div id="collapse-btn" class="tab collapse-btn">
@@ -548,15 +551,21 @@
                         <div class="logo-img">
                             <img src="./img/logo-white.png" alt="logo">
                         </div>
+                        <div class="hide-on-descktop">
+                            <p>Офтальмологический Центр</p>
+                            <p>«Микрохирургия Глаза»</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <p>Офтальмологический Центр</p>
-                    <p>«Микрохирургия Глаза»</p>
-                    <p>MIKOF</p>
-                    <p>022 55 83 65</p>
-                    <p>info@mikof.md</p>
-                    <div class="social-media d-flex justify-content-start">
+                    <div class="hide-on-mobile">
+                        <p>Офтальмологический Центр</p>
+                        <p>«Микрохирургия Глаза»</p>
+                        <p>MIKOF</p>
+                        <p>022 55 83 65</p>
+                        <p>info@mikof.md</p>
+                    </div>
+                    <div class="social-media d-flex justify-content-md-start">
                         <div class="social-icon">
                             <a href="#">
                                 <span class="icon-Facebook"></span>
@@ -584,7 +593,7 @@
                         </div>
                         <div class="social-icon">
                             <a href="#">
-                               <span class="icon-odnoklassniki"></span>
+                                <span class="icon-odnoklassniki"></span>
                             </a>
                         </div>
                     </div>
@@ -593,12 +602,16 @@
                     <p>Адрес:</p>
                     <p>MD-2038, Республика Молдова, </p>
                     <p>г. Кишинев, ул. Зелинского, 15</p>
+                    <div class="hide-on-desktop">
+                        <p>022 55 83 65</p>
+                        <p>info@mikof.md</p>
+                    </div>
                     <div class="button">
                         <button class="btn btn-primary">Регистратура</button>
                     </div>
                 </div>
                 <div class="col-md-4 d-flex">
-                    <div class="col-6">
+                    <div class="col-6 d-flex justify-content-center">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="#">Диагностика</a>
