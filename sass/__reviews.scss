@@ -4,7 +4,7 @@
     }
 
     .review-item {
-        margin: 20px;
+        margin-bottom: 20px;
         padding: 20px;
         box-shadow: 0 0 20px -4px $grey;
         background-color: $white;
@@ -13,6 +13,7 @@
     h3 {
         color: $blue;
         margin: 20px 0;
+        font-weight: 700;
     }
 
     p {

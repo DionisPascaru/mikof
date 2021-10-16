@@ -7,13 +7,9 @@ footer {
         display: flex;
         align-items: center;
         margin-bottom: 20px;
-        
+
         .logo-img {
             width: 100px;
-        }
-
-        img {
-            width: 100%;
         }
 
         p {
@@ -25,6 +21,7 @@ footer {
     a,
     button {
         color: $white;
+        font-size: 1rem;
     }
 
     .btn-primary {
@@ -34,7 +31,13 @@ footer {
 
         &:hover {
             border-color: #fff;
+            background-color: transparent;
+            color: #fff;
         }
+    }
+
+    .navbar-nav {
+        margin-bottom: 30px;
     }
 
     .nav-link {
@@ -48,7 +51,7 @@ footer {
     .copyright {
         background-color: #717982;
         padding: 18px 0;
-        
+
         p {
             color: $grey;
             margin: 0;
@@ -71,7 +74,7 @@ footer {
         margin: 20px 20px 20px 0;
 
         span {
-            font-size: 20px;
+            font-size: 24px;
             color: $grey;
         }
 
@@ -85,7 +88,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
     footer {
         .logo {
             display: block;
@@ -95,12 +98,18 @@ footer {
             }
         }
 
+        p,
+        a,
+        button {
+            max-width: 300px;
+        }
+
         .btn-primary {
             max-width: 300px;
             margin: 0;
         }
 
-        .hide-on-descktop {
+        .hide-on-desktop {
             display: none;
         }
 

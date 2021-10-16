@@ -38,7 +38,7 @@ $('#slider-carousel').slick({
             breakpoint: 430,
             settings: {
                 slidesToShow: 1,
-                arrows: false,
+                arrows: true,
                 autoplay: 2000
             }
         },
@@ -70,7 +70,7 @@ $('#dots-slider').slick({
     arrows: true,
     slidesToShow: 3,
     dots: true,
-    autoplay: true,
+    // autoplay: true,
     responsive: [
         {
             breakpoint: 430,

@@ -10,6 +10,7 @@
 
         h2 {
             color: $blue;
+            font-size: 2rem;
         }
     }
 
@@ -28,7 +29,7 @@
     }
 
     p {
-        font-size: 18px;
+        font-size: 1.125rem;
         color: $white;
     }
 
@@ -43,13 +44,13 @@
 }
 
 .our-team-item {
-    width: 290px;
+    width: 127px;
     padding: 0;
     margin: 10px;
 }
 
 .our-team-title a {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     color: $black;
     text-decoration: none;
@@ -61,7 +62,7 @@
 
 .our-team-img {
     border-radius: 0;
-    height: 290px;
+    height: 127px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,6 +99,26 @@
             width: 100%;
         }
     }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .social-media {
+        border: none;
+
+        .social-icon {
+            a {
+                &:hover span {
+                    color: $blue;
+                } 
+            }
+        }
+    }
+
+    .heading {
+        margin-bottom: 50px;
+    }
 }
 
 
@@ -111,11 +132,27 @@
     }
 }
 
+@media only screen and (min-width: 440px) {
+    .our-team {
+        .our-team-item {
+            width: 200px;
+        }
+
+        .our-team-img {
+            height: 200px;
+        }
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .about-us {
         .about-us-item {
             padding: 0;
             margin: 30px 0;
+
+            h2 {
+                font-size: 3rem;
+            }
         }
 
         .b-bottom {
@@ -126,6 +163,14 @@
     }
 
     .our-team {
+        .our-team-item {
+            width: 290px;
+        }
+
+        .our-team-img {
+            height: 290px;
+        }
+
         .services {
             display: block;
         }
@@ -140,8 +185,6 @@
     }
 
     .team-member {
-        padding-left: 80px;
-
         h1 {
             width: 100%;
             margin: 0;
@@ -167,6 +210,8 @@
 
 @media only screen and (min-width: 992px) {
     .team-member {
+        padding-left: 80px;
+        
         .content {
             padding: 0 0 0 80px;
         }

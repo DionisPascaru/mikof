@@ -2,12 +2,13 @@
     position: relative;
     padding: 20px 0;
     margin: 20px 12px;
-    border-bottom: 2px solid $light-grey;
+    border-bottom: 2px solid $grey;
     width: calc(100% - 24px);
 
     h4 {
         padding-left: 20px;
         margin: 0;
+        font-weight: 700;
     }
 
     &:before {

@@ -57,7 +57,7 @@ header {
         padding: 5px;
         color: $grey;
         font-weight: 600;
-        font-size: 12px;
+        font-size: 1.125rem;
 
         &:focus {
             color: $blue;
@@ -66,31 +66,50 @@ header {
 }
 
 .navbar-expand-md {
+    min-height: 46px;
+
+    .fixed-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        background-color: #fff;
+    }
+
+    .nav-item {
+        .active {
+            color: $blue;
+        }
+    }
+   
     .search-input {
         position: absolute;
         top: 46px;
         left: 0;
         right: 0;
         width: 100%;
-        max-width: 420px;
         margin: auto;
         height: 46px;
-        z-index: -1;
+        z-index: 999;
         opacity: 0;
 
         .form-control {
             padding: 10px;
         }
 
-
         &.active {
             opacity: 1;
             z-index: 999;
         }
-    }
+    }   
 }
 
 .navbar-collapse {
+    position: relative;
+    z-index: 99999;
+    background-color: #fff;
+
     .navbar-nav {
         text-align: right;
 
@@ -98,7 +117,7 @@ header {
             padding: 10px;
             color: $black;
             font-weight: 600;
-            font-size: 14px;
+            font-size: 1.2rem;
             border-bottom: 1px solid $light-grey;
 
             &:focus {
@@ -119,7 +138,7 @@ header {
     }
 
     .nav-link {
-        font-size: 18px;
+        font-size: 1rem;
 
         &.active {
             color: $blue;
@@ -129,7 +148,7 @@ header {
 
 .navbar-center {
     .nav-link {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 
@@ -145,7 +164,7 @@ header {
     transition: .5s ease-in-out;
 
     .nav-link {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     &.open {
@@ -172,11 +191,12 @@ header {
     }
 
     .heading {
+        margin: 30px 0;
         padding: 20px;
 
         p {
             max-width: 250px;
-            margin: auto;
+            margin: 0 auto!important;
 
             &:last-child {
                 border-bottom: 2px solid #0094d6;
@@ -198,15 +218,52 @@ header {
         text-align: center;
 
         h2 {
-            font-size: 48px;
+            font-size: 3rem;
             font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .btn {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .down-arrow {
+        margin-top: 100px;
+        width: 100%;
+        position: relative;
+        z-index: 9;
+        display: none;
+
+        .translate-arrow {
+            width: 50px;
+            margin: auto;
+            transform: translateY(0px);
+            transition: transform 0.5s ease 0s;
+
+            &:hover {
+                cursor: pointer;
+                transform: translateY(10px);
+            }
+
+            span {
+                font-size: 50px;
+                color: $grey;
+            }
         }
     }
 }
 
 
 .banner-mobile-block {
-    margin: 0 -12px;
+    margin: 0 -20px;
     box-shadow:
         inset 0px 80px 75px 10px #fff,
         inset 0px -80px 75px -10px #fff;
@@ -238,9 +295,20 @@ header {
         background-repeat: no-repeat;
         background-position: right;
         padding: 20px 0;
+        margin-top: 0;
 
         .heading {
             display: none;
+        }
+
+        .btn {
+            &:nth-of-type(1) {
+                margin-right: 30px;
+            }
+        }
+
+        .down-arrow {
+            display: block;
         }
     }
 
