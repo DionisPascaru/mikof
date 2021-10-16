@@ -1,10 +1,13 @@
 .search {  
-    position: relative;
+    position: absolute;
     max-width: 500px;
+    right: 50px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #fff;
+    height: 50px;
     
-    .search-field {
-        position: absolute;
-        right: 30px;
+    .search-field {        
         visibility: hidden;
         width: 0;
         height: 46px;
@@ -18,11 +21,12 @@
     }
 
     &.active {
+        border-color: $grey;
+
         .search-field {
             visibility: visible;
             width: 320px;
             padding: 11px 20px;
-            box-shadow: 0 0 20px 0px #c3c3c3;
             -webkit-transition: all  .5s ease-in-out;
             -moz-transition: all  .5s ease-in-out;
             -o-transition: all  .5s ease-in-out;
@@ -38,7 +42,7 @@
     .search-btn {
         background-color: transparent;
         border: none;
-        padding: 15px 0 15px 15px;
+        margin: 15px 0 15px 15px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -49,6 +53,10 @@
         }
     }
     
+
+    &.search-component {
+        position: static;
+    }
 
     &::after {
         width: 46px;
@@ -69,5 +77,17 @@
     .form-control {
         border: none;
         padding: 0;
+    }
+}
+
+#mobile-search-field {
+    &.active {
+        height: 100vh;
+        background-color: rgba($color: $black, $alpha: 0.8);
+
+        .search-field {
+            max-width: 300px;
+            margin: 50px auto 0;
+        }
     }
 }

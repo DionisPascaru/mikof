@@ -10,7 +10,6 @@
     .article-img {
         max-height: 250px;
         overflow: hidden;
-        margin: 20px 0;
     }
 
     .article-body {
@@ -24,12 +23,12 @@
     h4 {
         color: $blue;
         margin: 20px 0;
-        font-size: 30px;
+        font-size: 1.875rem;
         font-weight: 600;
     }    
 
     p {
-        font-size: 14px;
+        font-size: 1.125rem;
     }
 
     .text-center {

@@ -1,12 +1,14 @@
 .carousel {
     margin: 20px 0;
     padding: 30px;
-    border-top: 2px solid $light-grey;
-    border-bottom: 2px solid $light-grey;
+    border-top: 2px solid $grey;
+    border-bottom: 2px solid $grey;
+
+
 
     .slick-slide {
         padding: 10px;
-        font-size: 18px;
+        font-size: 1.125rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -53,6 +55,48 @@
     }
 }
 
+.dots-carousel {
+    margin-top: 50px;
+    margin-bottom: 70px!important;
+    padding: 0;
+    border: none;
+
+    .slide-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .slick-slide{
+        padding: 0;
+    }
+
+    .slick-dots {
+        bottom: -50px;
+        button {
+            width: 10px;
+            height: 10px;
+            
+            &::before {
+                width: 10px;
+                height: 10px;
+                font-size: 0;
+                color: #fff;
+                border: 1px solid $black;
+                border-radius: 50%;
+            }
+        }
+
+        li.slick-active button:before {
+            background-color: $black;
+        }
+    }
+}
 
 @media only screen and (min-width: 430px) {
     .carousel {
@@ -61,4 +105,13 @@
             height: 290px;
         }
     }
+
+    .dots-carousel {    
+        .slide-img {
+            img {
+                width: auto;
+                height: 100%;
+            }
+        }
+    }    
 }
