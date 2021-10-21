@@ -1631,7 +1631,16 @@ footer button {
 }
 #mobile-search-field.active .search-field {
   max-width: 300px;
-  margin: 50px auto 0;
+}
+#mobile-search-field .search-field {
+  border: none;
+}
+#mobile-search-field .search-btn {
+  border: none;
+  width: 46px;
+  height: 46px;
+  background-color: #fff;
+  border-left: 1px solid #c3c3c3;
 }
 
 .icon-add:before {
