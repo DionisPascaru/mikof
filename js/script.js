@@ -20,7 +20,15 @@ $('#search-btn').on('click', function () {
 });
 
 // mobile search button
-$('#mobile-search-btn').click(function (e) {
+$('#mobile-search-btn').click(function () {
+    if($("#mobile-search-btn span").hasClass('icon-loupe')){
+        $(".search-tab span").removeClass('icon-loupe').addClass('icon-add');
+        $(".search-tab").css("transform", "rotate(45deg)");
+    } else {
+        $(".search-tab span").removeClass('icon-add').addClass('icon-loupe');
+        $(".search-tab").css("transform", "rotate(0deg)");
+    }
+    
     $('#mobile-search-field').toggleClass('active');
     if(!$(this).hasClass('active')) {
         $('#mobile-search-input').trigger("focus");
