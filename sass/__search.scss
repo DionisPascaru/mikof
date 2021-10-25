@@ -8,7 +8,7 @@
     height: 50px;
     
     .search-field {        
-        visibility: hidden;
+        z-index: 9;
         width: 0;
         height: 46px;
         max-width: 320px;
@@ -24,7 +24,6 @@
         border-color: $grey;
 
         .search-field {
-            visibility: visible;
             width: 320px;
             padding: 11px 20px;
             -webkit-transition: all  .5s ease-in-out;
@@ -33,16 +32,22 @@
             transition: all  .5s ease-in-out;
         }
 
-        .search-btn {
+        .submit-btn {
             background-color: $white;
-            transition-delay: 0ms;            
+            transition-delay: 0ms; 
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            display: flex;
         }
     }
 
+    .submit-btn,
     .search-btn {
         background-color: transparent;
         border: none;
-        margin: 15px 0 15px 15px;
+        padding: 23px 15px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -51,11 +56,29 @@
             font-size: 20px;
             color: $grey;
         }
-    }
+    }     
     
+    .submit-btn {
+        display: none;
+    }
+
+    .search-btn {
+        span {
+            position: relative;
+            z-index: -1;
+        }
+    }
 
     &.search-component {
         position: static;
+
+        form {
+            width: 100%;
+        }
+
+        .submit-btn {
+            padding: 8px;
+        }
     }
 
     &::after {
