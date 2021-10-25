@@ -20,21 +20,30 @@ $(document).ready(function () {
         }, 500)
     });
 
-    $(document).click(function(e){
+    $(document).click(function (e) {
         console.log(e.target.id)
-        if(e.target.id != 'search-btn' && e.target.id != 'search-input'){
-            if(e.target.id != 'submit-btn'){
+        if (e.target.id != 'search-btn' && e.target.id != 'search-input') {
+            if (e.target.id != 'submit-btn') {
                 $('#search-field').removeClass('active');
             }
         }
     })
 
     // mobile search button
-    $('#mobile-search-btn').click(function (e) {
+    $('#mobile-search-btn').click(function () {
+        if ($("#mobile-search-btn span").hasClass('icon-loupe')) {
+            $(".search-tab span").removeClass('icon-loupe').addClass('icon-add');
+            $(".search-tab").css("transform", "rotate(45deg)");
+        } else {
+            $(".search-tab span").removeClass('icon-add').addClass('icon-loupe');
+            $(".search-tab").css("transform", "rotate(0deg)");
+        }
+
         $('#mobile-search-field').toggleClass('active');
         if (!$(this).hasClass('active')) {
             $('#mobile-search-input').trigger("focus");
         }
+
     });
 
     // slick carousel
