@@ -1564,7 +1564,7 @@ footer button {
   height: 50px;
 }
 .search .search-field {
-  visibility: hidden;
+  z-index: 9;
   width: 0;
   height: 46px;
   max-width: 320px;
@@ -1579,7 +1579,6 @@ footer button {
   border-color: #c3c3c3;
 }
 .search.active .search-field {
-  visibility: visible;
   width: 320px;
   padding: 11px 20px;
   -webkit-transition: all 0.5s ease-in-out;
@@ -1587,24 +1586,44 @@ footer button {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-.search.active .search-btn {
+.search.active .submit-btn {
   background-color: #fff;
   transition-delay: 0ms;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
 }
+.search .submit-btn,
 .search .search-btn {
   background-color: transparent;
   border: none;
-  margin: 15px 0 15px 15px;
+  padding: 23px 15px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.search .submit-btn span,
 .search .search-btn span {
   font-size: 20px;
   color: #c3c3c3;
 }
+.search .submit-btn {
+  display: none;
+}
+.search .search-btn span {
+  position: relative;
+  z-index: -1;
+}
 .search.search-component {
   position: static;
+}
+.search.search-component form {
+  width: 100%;
+}
+.search.search-component .submit-btn {
+  padding: 8px;
 }
 .search::after {
   width: 46px;
