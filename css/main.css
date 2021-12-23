@@ -922,7 +922,7 @@ header .phone span {
   .services .service-item {
     border: none;
     margin: 10px 0;
-    padding: 20px 5px 20px 0;
+    padding: 5px 10px 5px 0;
   }
   .services .service-head {
     width: 100%;
