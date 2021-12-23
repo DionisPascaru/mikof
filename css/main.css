@@ -521,6 +521,7 @@ header .phone span {
 }
 .navbar-top .nav-link {
   font-size: 1rem;
+  font-weight: 600;
 }
 .navbar-top .nav-link.active {
   color: #0094d6;
@@ -528,6 +529,7 @@ header .phone span {
 
 .navbar-center .nav-link {
   font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .navbar-bootom {
@@ -572,6 +574,7 @@ header .phone span {
 .banner .heading p {
   max-width: 250px;
   margin: 0 auto !important;
+  font-weight: 600;
 }
 .banner .heading p:last-child {
   border-bottom: 2px solid #0094d6;
@@ -689,6 +692,7 @@ header .phone span {
   }
   .navbar-center p {
     margin: 0;
+    font-weight: 600;
   }
   .navbar-center .nav-link {
     height: 30px;
@@ -1651,6 +1655,9 @@ footer button {
 #mobile-search-field.active .search-field {
   max-width: 300px;
 }
+#mobile-search-field.active form {
+  position: initial;
+}
 #mobile-search-field .search-field {
   border: none;
 }
@@ -1660,6 +1667,10 @@ footer button {
   height: 46px;
   background-color: #fff;
   border-left: 1px solid #c3c3c3;
+}
+#mobile-search-field form {
+  position: relative;
+  z-index: -1;
 }
 
 .icon-add:before {
