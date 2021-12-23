@@ -12,6 +12,16 @@ header {
 
     .nav {
         flex-wrap: nowrap;
+
+        &.hide {
+            a {
+                opacity: 0;
+            }
+        }
+
+        a {
+            transition: all 0.5s;
+        }
     }
 
     .tabs {

@@ -14,6 +14,7 @@ $(document).ready(function () {
 
     // header search button
     $('#search-btn').click(function () {
+        $('#nav').addClass('hide');
         $('#search-field').addClass('active');
         setTimeout(() => {
             $('#search-input').focus();
@@ -21,9 +22,10 @@ $(document).ready(function () {
     });
 
     $(document).click(function (e) {
-        console.log(e.target.id)
+        
         if (e.target.id != 'search-btn' && e.target.id != 'search-input') {
             if (e.target.id != 'submit-btn') {
+                $('#nav').removeClass('hide');
                 $('#search-field').removeClass('active');
             }
         }
@@ -106,6 +108,4 @@ $(document).ready(function () {
             }
         ]
     })
-
-
 });
