@@ -14,7 +14,7 @@ $(document).ready(function () {
 
     // header search button
     $('#search-btn').click(function () {
-        $('#nav').addClass('hide');
+        $('.nav').addClass('hide');
         $('#search-field').addClass('active');
         setTimeout(() => {
             $('#search-input').focus();
@@ -26,7 +26,7 @@ $(document).ready(function () {
         
         if (e.target.id != 'search-btn' && e.target.id != 'search-input') {
             if (e.target.id != 'submit-btn') {
-                $('#nav').removeClass('hide');
+                $('.nav').removeClass('hide');
                 $('#search-field').removeClass('active');
                 $('#search-field').css("border-color", "#c3c3c3");
             }
