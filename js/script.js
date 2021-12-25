@@ -17,6 +17,7 @@ $(document).ready(function () {
         $('#search-field').addClass('active');
         setTimeout(() => {
             $('#search-input').focus();
+            $('#search-field').css("border-color", "#0094d6");
         }, 500)
     });
 
@@ -25,6 +26,7 @@ $(document).ready(function () {
         if (e.target.id != 'search-btn' && e.target.id != 'search-input') {
             if (e.target.id != 'submit-btn') {
                 $('#search-field').removeClass('active');
+                $('#search-field').css("border-color", "#c3c3c3");
             }
         }
     })
