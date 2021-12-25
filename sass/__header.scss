@@ -149,6 +149,7 @@ header {
 
     .nav-link {
         font-size: 1rem;
+        font-weight: 600;
 
         &.active {
             color: $blue;
@@ -159,6 +160,7 @@ header {
 .navbar-center {
     .nav-link {
         font-size: 1.25rem;
+        font-weight: 600;
     }
 }
 
@@ -207,6 +209,7 @@ header {
         p {
             max-width: 250px;
             margin: 0 auto!important;
+            font-weight: 600;
 
             &:last-child {
                 border-bottom: 2px solid #0094d6;
@@ -357,6 +360,7 @@ header {
 
         p {
             margin: 0;
+            font-weight: 600;
         }
 
         .nav-link {
