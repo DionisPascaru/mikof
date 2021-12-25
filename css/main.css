@@ -420,6 +420,12 @@ header .logo {
 header .nav {
   flex-wrap: nowrap;
 }
+header .nav.hide a {
+  opacity: 0;
+}
+header .nav a {
+  transition: all 0.5s;
+}
 header .tabs {
   width: 100%;
   border-bottom: 1px solid #c3c3c3;
