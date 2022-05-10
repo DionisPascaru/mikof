@@ -39,6 +39,34 @@
     .form-select {
         padding-right: 30px;
     }
+
+    .dropdown {
+        position: relative;
+
+        .dropdown-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 20px 0;
+            width: 100%;
+            border-color: #000;
+            border-radius: 0;
+        }
+
+        li {
+            padding: 0 20px;
+
+            &:hover {
+                background-color: $blue;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+
+        .doctors-card {
+            display: none;
+        }
+    }
+    
 }
 
 @media only screen and (min-width: 768px) {
@@ -48,6 +76,29 @@
         .b-bottom {
             h2 {
                 margin: 20px 0;
+            }
+        }
+
+        .dropdown {
+            .card {
+                display: none;
+                position: absolute;
+                top: 0;
+                right: -18rem;
+    
+                .card-image {
+                    border-radius: 50%;
+                    overflow: hidden;
+                    margin: 20px 50px;
+                }
+            }
+    
+            .visible {
+                display: block;
+            }
+    
+            .doctors-card {
+                display: block;
             }
         }
     }

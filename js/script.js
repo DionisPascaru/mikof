@@ -23,7 +23,7 @@ $(document).ready(function () {
     });
 
     $(document).click(function (e) {
-        
+
         if (e.target.id != 'search-btn' && e.target.id != 'search-input') {
             if (e.target.id != 'submit-btn') {
                 $('#nav').removeClass('hide');
@@ -110,4 +110,22 @@ $(document).ready(function () {
             }
         ]
     })
+
+    // show doctor details on hover select item
+    $('#doctors li').mouseover(function () {
+        let id = $(this).attr('id');
+
+        $(`#doctor${id}`).addClass('visible');
+    });
+
+    $('#doctors li').mouseout(function () {
+        $('.card').removeClass('visible');
+    });
+
+
+    // get selected doctor 
+    $('#doctors li').click(function () {
+        let value = $(this).text();
+        $('#labelId').text(value);
+    });
 });

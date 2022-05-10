@@ -81,23 +81,81 @@
                                     </select>
                                 </div>
                                 <div class="mb-3">
-                                    <select class="form-control form-select" required>
-                                        <option selected disabled value="">Выбор врача</option>
-                                        <option>врача 1</option>
-                                        <option>врача 2</option>
-                                        <option>врача 3</option>
-                                    </select>
+                                    <div class="dropdown">
+                                        <div id="labelId" class="form-control form-select" type="button" id="dropdownMenuButton1"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Выбор врача
+                                        </div>
+                                        <ul id="doctors" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li id="1">
+                                                <span>Crestincova Marina</span>
+                                            </li>
+                                            <li id="2">
+                                                <span>Cuciuc Veronica</span>
+                                            </li>
+                                            <li id="3">
+                                                <span>Tanurcov Fiodor</span>
+                                            </li>
+                                            <li id="4">
+                                                <span>Cosciuc Alexandru</span>
+                                            </li>
+                                        </ul>
+
+                                        <!-- hidden doctors card -->
+                                        <div class="doctors-card">
+                                            <div id="doctor1" class="card box-shadow" style="width: 18rem;">
+                                                <div class="card-image">
+                                                    <img src="./img/team-5.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Crestincova Marina</h5>
+                                                    <p class="card-text">Some quick example text to build on the card title and
+                                                        make up the bulk of the card's content.</p>
+                                                </div>
+                                            </div>
+                                            <div id="doctor2" class="card box-shadow" style="width: 18rem;">
+                                                <div class="card-image">
+                                                    <img src="./img/team-3.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Cuciuc Veronica</h5>
+                                                    <p class="card-text">Some quick example text to build on the card title and
+                                                        make up the bulk of the card's content.</p>
+                                                </div>
+                                            </div>
+                                            <div id="doctor3" class="card box-shadow" style="width: 18rem;">
+                                                <div class="card-image">
+                                                    <img src="./img/team-1.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Tanurcov Fiodor</h5>
+                                                    <p class="card-text">Some quick example text to build on the card title and
+                                                        make up the bulk of the card's content.</p>
+                                                </div>
+                                            </div>
+                                            <div id="doctor4" class="card box-shadow" style="width: 18rem;">
+                                                <div class="card-image">
+                                                    <img src="./img/team-2.png" class="card-img-top" alt="...">
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Cosciuc Alexandru</h5>
+                                                    <p class="card-text">Some quick example text to build on the card title and
+                                                        make up the bulk of the card's content.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
                                 </div>
                                 <div class="mb-3">
                                     <p class="text-center">Выбор даты:</p>
                                     <div class="d-flex justify-content-center">
-                                       <div class="mb-3">
-                                        <select class="form-control form-select" required>
-                                            <option>01</option>
-                                            <option>02</option>
-                                            <option>03</option>
-                                        </select>
-                                       </div>
+                                        <div class="mb-3">
+                                            <select class="form-control form-select" required>
+                                                <option>01</option>
+                                                <option>02</option>
+                                                <option>03</option>
+                                            </select>
+                                        </div>
                                         <div class="mb-3">
                                             <select class="form-control form-select" required>
                                                 <option>Январь</option>
@@ -260,7 +318,7 @@
         </section>
     </main>
 
-    <script src="./bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./jquery/dist/jquery.min.js"></script>
     <script src="./slick-carousel/slick/slick.min.js"></script>
     <script src="./js/script.js"></script>
